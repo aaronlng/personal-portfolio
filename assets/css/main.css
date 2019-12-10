@@ -36,10 +36,12 @@ body {
     z-index: 10;
 }
 
-#navbar>ul {
+.nav-list {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right: 2rem;
 }
 
 #navbar li {

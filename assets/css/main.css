@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr repeat(2, auto) .5fr;
+    grid-template-areas: 
+        "nav"
+        "welcome"
+        "projects"
+        "footer";
+}
+
+/* Navigation */
+
+#navbar {
+    grid-area: nav;
+    width: 100%;
+    background: #0c6b12;
+}
+
+#navbar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline; 
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar ul a:hover {
+    background: #ffffff;
+}
+
+
+
+/* Welcome Section */
+
+#welcome-section {
+    grid-area: welcome;
+    width: 100%;
+    height: 100vh;
+    background: #e00000;
+}
+
+    /* Social Links */
+
+/* Projects Section */
+
+#projects {
+    grid-area: projects;
+    background: #0c6b12;
+}

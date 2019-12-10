@@ -73,3 +73,9 @@ body {
     grid-area: projects;
     background: #0c6b12;
 }
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        justify-content: center;
+    }
+}

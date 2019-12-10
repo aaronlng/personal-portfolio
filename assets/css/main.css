@@ -1,5 +1,12 @@
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* Grid */
@@ -7,8 +14,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr repeat(2, auto) .5fr;
-    grid-template-areas: 
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
         "nav"
         "welcome"
         "projects"
@@ -19,18 +26,24 @@
 
 #navbar {
     grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #0c6b12;
+    z-index: 10;
 }
 
-#navbar > ul {
+#navbar>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #navbar li {
-    display: inline; 
+    display: inline;
 }
 
 #navbar a {
@@ -41,8 +54,6 @@
     background: #ffffff;
 }
 
-
-
 /* Welcome Section */
 
 #welcome-section {
@@ -52,7 +63,7 @@
     background: #e00000;
 }
 
-    /* Social Links */
+/* Social Links */
 
 /* Projects Section */
 

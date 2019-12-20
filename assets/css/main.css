@@ -42,18 +42,28 @@ body {
     margin: 0;
     padding: 0;
     margin-right: 2rem;
+    justify-content: space-evenly;
 }
 
 #navbar li {
     display: inline;
+    margin-right: 10px;
 }
 
-#navbar a {
+.nav-list li:last-child {
+    margin-right: 0px;
+}
+
+.nav-list a {
     text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
 }
 
 #navbar ul a:hover {
-    background: #ffffff;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
 }
 
 /* Welcome Section */
@@ -96,8 +106,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
-/* Social Links */
 
 /* Projects Section */
 

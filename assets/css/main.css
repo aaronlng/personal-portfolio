@@ -115,7 +115,40 @@ body {
 #projects {
     grid-area: projects;
     background: #0c6b12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "image image"
+        "demo code";
+}
+
+.project-tile img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+}
+
+.demo {
+    grid-area: demo;
+    color: #e00070;
+    font-size: 1.5em;
+    justify-self: center;
+}
+
+.code {
+    grid-area: code;
+    color: #e00070;
+    font-size: 1.5em;
+    justify-self: center;
+}
+
 
 @media screen and (max-width: 768px) {
     #navbar {

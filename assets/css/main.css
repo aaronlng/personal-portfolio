@@ -33,7 +33,7 @@ body {
     left: 0;
     width: 100%;
     min-height: 50px;
-    background: #00e000;
+    background: #ffffff;
     z-index: 10;
 }
 
@@ -63,9 +63,8 @@ body {
 }
 
 #navbar ul a:hover {
-    color: #ffffff;
     text-decoration: underline;
-    text-decoration-color: #ffffff;
+    text-decoration-color: #e00070;
 }
 
 /* Welcome Section */
@@ -83,8 +82,10 @@ body {
 #welcome-section h1 {
     align-self: end;
     justify-self: center;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 #welcome-section p {
@@ -93,6 +94,7 @@ body {
     font-size: 1.5em;
     font-style: italic;
     margin-top: 0px;
+    color: #ffffff;
 }
 
 #welcome-section div {
@@ -107,7 +109,11 @@ body {
 .social a {
     font-size: 1.5em;
     text-decoration: none;
-    color: #000;
+    color:#ffffff;
+}
+
+.social a:hover {
+    transform: scale(1.5);
 }
 
 /* Projects Section */
@@ -141,6 +147,7 @@ body {
     font-size: 1.5em;
     justify-self: center;
     text-decoration: none;
+    height: 2rem;
 }
 
 .code {
@@ -149,6 +156,7 @@ body {
     font-size: 1.5em;
     justify-self: center;
     text-decoration: none;
+    height: 2rem;
 }
 
 

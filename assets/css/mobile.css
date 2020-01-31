@@ -111,4 +111,13 @@
     .social a:hover {
         transform: translateX(10px);
     }
+
+    /* Projects Section */
+
+    #projects {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        gap: 5px;
+    }
 }

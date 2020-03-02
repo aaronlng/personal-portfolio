@@ -12,7 +12,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-rows: auto 1fr repeat(2, auto);
     grid-template-areas:
         "nav"
         "welcome"
@@ -122,13 +122,14 @@ body {
     background: #0c6b12;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: auto;
 }
 
 .project-tile {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 75% 25%;
+    max-height: 500px;
     grid-template-areas:
         "image image"
         "demo code";
@@ -163,6 +164,7 @@ body {
 #footer {
     grid-area: footer;
     background-color: #e00000;
+    height: 100%;
 }
 
 #footer p {
